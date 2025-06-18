@@ -117,7 +117,9 @@
   @media (max-width: 480px) {
     .main-heading {
       font-size: 3rem;
-      bottom: 15%;
+      top: 3.8rem;
+      height: 50vh;
+      width: 50vw;
     }
   }
   
