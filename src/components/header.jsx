@@ -20,7 +20,11 @@ function Header() {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         style={{ cursor: "pointer" }}
       >
-        The Kings Arms
+        <span>The</span>
+        <br />
+        <span>Kings</span>
+        <br />
+        <span>Arms</span>
       </a>
       <nav className="nav-links">
         <a href="#location">Location</a>

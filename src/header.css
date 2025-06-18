@@ -23,6 +23,8 @@
 }
 
 .site-logo {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     left:1rem;
     top:.5rem;
@@ -35,6 +37,13 @@
     transition: color 0.3s ease;
   }
   
+  @media (max-width: 500px) {
+    .site-logo {
+        font-size: 1rem;
+      flex-direction: column;
+      align-items: flex-start; /* optional: left-align when stacked */
+    }
+  }
   .site-logo:hover {
     color: gold;
   }
@@ -77,8 +86,13 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-
   .nav-links a {
     font-size: 1.2rem;
   }
 }
+/* @media (max-width: 00px) {
+    .site-logo {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+} */
