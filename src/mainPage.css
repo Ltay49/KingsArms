@@ -116,7 +116,7 @@
   /* Mobile Portrait */
   @media (max-width: 480px) {
     .main-heading {
-      font-size: 3rem;
+      font-size: 10rem;
       top: 3.8rem;
       height: 50vh;
       width: 50vw;
