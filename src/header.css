@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .site-header.scrolled {
+    background-color: rgba(0, 0, 0, 0.7); /* Subtle dark background on scroll */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+
+.site-header.visible {
+  transform: translateY(0);
+}
+
+.site-logo {
+    position: absolute;
+    left:1rem;
+    top:.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .site-logo:hover {
+    color: gold;
+  }
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .site-header.scrolled .nav-links  {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .site-header.scrolled .site-logo  {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+.nav-links a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: gold;
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+}

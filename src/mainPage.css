@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.main-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.full-height-image {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.main-heading {
+  position: absolute;
+  bottom: 0rem;
+  left: 1rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 12rem;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 2; /* make sure it's above the overlay */
+}
+.tripadvisor-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: red;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  background: rgba(3, 3, 204, .7); /* subtle dark blue */
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  z-index: 2; /* Ensure it's above the overlay */
+}
+
+  
+  .tripadvisor-link:hover {
+    background: rgba(0, 0, 50, 0.9);
+    /* text-decoration: underline; */
+  }
+  
+  .scroll-arrow {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: red;
+    animation: bounce 1.5s infinite;
+    z-index: 3;
+    user-select: none;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, 10px);
+    }
+  }
+  
+/* Tablet */
+@media (max-width: 1024px) {
+    .main-heading {
+      font-size: 10rem;
+      bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .main-heading {
+      font-size: 8rem;
+      bottom: 3.5rem;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 8rem;
+      bottom: 3.3rem;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 700px) {
+    .main-heading {
+      font-size: 8rem;
+      top: 3.8rem;
+      flex-direction: column;
+      /* border: 1px solid; */
+      height: 50vh;
+      width: 50vw;
+    }
+  }
+  
+  /* Mobile Portrait */
+  @media (max-width: 480px) {
+    .main-heading {
+      font-size: 3rem;
+      bottom: 15%;
+    }
+  }
+  
