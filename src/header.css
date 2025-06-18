@@ -42,12 +42,12 @@
     padding: 0;
   }
   
-  @media (max-width: 500px) {
+  @media (max-width: 480px) {
     .site-logo {
         line-height: 0;
         padding: 2px;
         letter-spacing: 2px;
-        font-size: 1rem;
+        font-size: 4rem;
       flex-direction: column;
       align-items: flex-start; /* optional: left-align when stacked */
     }
