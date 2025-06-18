@@ -47,7 +47,7 @@
         line-height: 10px;
         padding: 2px;
         letter-spacing: 2px;
-        font-size: 2rem;
+        font-size: 1.5rem;
       flex-direction: column;
       align-items: flex-start; /* optional: left-align when stacked */
     }
