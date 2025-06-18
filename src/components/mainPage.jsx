@@ -1,6 +1,6 @@
 import React from "react";
 import BarImage from "/BarFront.png";
-import "../MainPage.css";
+import "../mainPage.css";
 import "./reviewCarousel";
 import ReviewCarousel from "./reviewCarousel";
 import FoodSection from "./foodSection";

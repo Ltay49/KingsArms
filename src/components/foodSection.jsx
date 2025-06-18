@@ -1,5 +1,5 @@
 import React from 'react';
-import '../FoodSection.css';
+import '../foodSection.css';
 
 import dish1 from '/guninessPint.png';
 import dish2 from '/IceCream.png';
