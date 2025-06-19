@@ -154,7 +154,8 @@
     font-size: 1.5rem;         /* Larger text */
     bottom: 3rem;            /* Higher up */
     right: 1rem;             /* Adjust if needed */
-    padding: 10px 16px;      /* Bigger touch target */
+    padding: 10px 16px;  
+    border: 10px solid black;    /* Bigger touch target */
   }
   .scroll-arrow {
     font-size: 4rem;         /* Bigger arrow */
