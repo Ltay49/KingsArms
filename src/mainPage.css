@@ -60,7 +60,7 @@
 
 .tripadvisor-link {
     position: absolute;
-    bottom: 4rem;
+    /* bottom: 4rem; */
     right: 1.5rem;
     color: red;
     text-decoration: none;
@@ -92,6 +92,13 @@
     z-index: 12;
     user-select: none;
 }
+.link-wrapper {
+    position: absolute;
+    bottom: 4rem;
+    z-index: 15;
+    height: 3rem; /* or min-height */
+    width: 100vw;
+  }
 
 @media (max-width: 480px) {
     .scroll-arrow{
@@ -151,26 +158,18 @@
     }
 
   .tripadvisor-link {
-    font-size: 1.5rem;         /* Larger text */
-    bottom: 3rem;            /* Higher up */
+    font-size: 1.5rem;         /* Larger text */ 
     right: 1rem;             /* Adjust if needed */
     padding: 10px 16px;  
  /* Bigger touch target */
+  }
+  .link-wrapper{
+    bottom: 10.7rem;
   }
   .scroll-arrow {
     font-size: 4rem;         /* Bigger arrow */
     bottom: 10rem;           /* Higher position */
   }
-  }
-
-  @media (max-width: 500px) {
-    .tripadvisor-link{
-        bottom: 10rem;  
-    }
-    .scroll-arrow {
-        font-size: 4rem;         /* Bigger arrow */
-        bottom: 20rem;           /* Higher position */
-      }
   }
 
 /* @media (max-width: 380px) {

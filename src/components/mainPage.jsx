@@ -16,6 +16,7 @@ function MainPage() {
     <ReviewCarousel />
   </div>
 
+    <div className="link-wrapper">
   <a
     className="tripadvisor-link"
     href="https://www.tripadvisor.co.uk/Restaurant_Review-g528791-d3683423-Reviews-The_Kings_Arms-Oldham_Greater_Manchester_England.html#REVIEWS"
@@ -24,6 +25,7 @@ function MainPage() {
   >
     Read Our Reviews
   </a>
+  </div>
 
   <div className="scroll-arrow">▼</div>
 </div>
