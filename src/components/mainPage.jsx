@@ -8,31 +8,35 @@ import FoodSection from "./foodSection";
 function MainPage() {
   return (
     <>
-  <div className="main-page">
+<div className="main-page">
   <img src={BarImage} alt="Bar Front" className="full-height-image" />
 
   <div className="main-content">
     <h1 className="main-heading">The Kings Arms</h1>
     <ReviewCarousel />
-  </div>
 
-    <div className="link-wrapper">
-  <a
-    className="tripadvisor-link"
-    href="https://www.tripadvisor.co.uk/Restaurant_Review-g528791-d3683423-Reviews-The_Kings_Arms-Oldham_Greater_Manchester_England.html#REVIEWS"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Read Our Reviews
-  </a>
-  </div>
+    <a
+      className="tripadvisor-link"
+      href="https://www.tripadvisor.co.uk/Restaurant_Review-g528791-d3683423-Reviews-The_Kings_Arms-Oldham_Greater_Manchester_England.html#REVIEWS"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Read Our Reviews
+    </a>
 
-  <div className="scroll-down-btn" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
-  <span>Scroll</span>
-  <div className="chevron"></div>
+    <div
+      className="scroll-down-btn"
+      onClick={() =>
+        window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
+      }
+    >
+      <span>Scroll</span>
+      <div className="chevron"></div>
+    </div>
+  </div>
 </div>
 
-</div>
+
 
       <section>
         <FoodSection />
