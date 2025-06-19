@@ -150,3 +150,12 @@
        justify-content: flex-start;
     }
 } 
+
+@media (max-width: 480px) {
+    .main-heading {
+        font-size: 10rem;
+        height: 80vh;
+        width: 60vw;
+        /* border: 1px solid; */
+    }
+} 
