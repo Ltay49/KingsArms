@@ -150,12 +150,15 @@
        justify-content: flex-start;
     }
 } 
-
 @media (max-width: 480px) {
     .main-heading {
-        font-size: 10rem;
-        height: 80vh;
-        width: 60vw;
+        font-size: 8rem;
+        height: 40vh;
+        width: 50vw;
         /* border: 1px solid; */
+    }
+    .main-content {
+        margin-top: 4rem;
+       justify-content: flex-start;
     }
 } 
