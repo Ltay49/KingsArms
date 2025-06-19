@@ -27,7 +27,11 @@ function MainPage() {
   </a>
   </div>
 
-  <div className="scroll-arrow">▼</div>
+  <div className="scroll-down-btn" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
+  <span>Scroll</span>
+  <div className="chevron"></div>
+</div>
+
 </div>
 
       <section>
