@@ -91,9 +91,8 @@
 }
 
 @media (max-width: 480px) {
-    .scroll-arrow {
-        bottom: 10rem;
-        font-size: 5rem;
+    .scroll-down-btn {
+      margin-bottom: 10rem;
     }
 }
 
