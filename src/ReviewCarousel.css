@@ -16,7 +16,7 @@
   }
   
   /* Override for small screens */
-  @media (max-width: 499px) {
+  @media (max-width: 480px) {
     .review-wrapper {
       white-space: normal;      
       text-align: left;  
