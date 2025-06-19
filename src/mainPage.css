@@ -155,12 +155,22 @@
     bottom: 3rem;            /* Higher up */
     right: 1rem;             /* Adjust if needed */
     padding: 10px 16px;  
-    border: 10px solid black;    /* Bigger touch target */
+ /* Bigger touch target */
   }
   .scroll-arrow {
     font-size: 4rem;         /* Bigger arrow */
     bottom: 10rem;           /* Higher position */
   }
+  }
+
+  @media (max-width: 500px) {
+    .tripadvisor-link{
+        bottom: 10rem;  
+    }
+    .scroll-arrow {
+        font-size: 4rem;         /* Bigger arrow */
+        bottom: 20rem;           /* Higher position */
+      }
   }
 
 /* @media (max-width: 380px) {
