@@ -31,13 +31,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height:80vh;
+    height:100vh;
     width: 100vw;
-    margin-top: 5rem;
-    margin-left: 10px;
-    padding-top: 6rem;
+    margin-top: 0rem;
     position: relative; /* Important */
-    z-index: 10; /* Ensure it's above overlay and image */
+    z-index: 10;
+    /* border: 5px solid green; */
   }
 
   /* .main-content {
@@ -49,10 +48,10 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 12rem;
     color: red;
-    line-height: 10rem;
+    line-height: 0rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0;
+    margin-left: 1rem;
   }
 
 .tripadvisor-link {
@@ -135,11 +134,11 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main-heading {
         font-size: 8rem;
-        top: 3.2rem;
-        height: 50vh;
-        width: 50vw;
+        height: 100vh;
+        width: 80vw;
+        /* border: 1px solid; */
     }
 } 
