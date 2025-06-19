@@ -48,16 +48,19 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 12rem;
     color: red;
-    line-height: 0rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin: 0;         /* ✨ critical */
+    padding: 0;        /* ✨ critical */
+    line-height: 1;    /* ✅ standard line height */
     margin-left: 1rem;
   }
+  
 
 .tripadvisor-link {
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 4rem;
+    right: 1.5rem;
     color: red;
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
@@ -67,7 +70,7 @@
     padding: 6px 12px;
     border-radius: 4px;
     transition: background 0.3s ease;
-    z-index: 2;
+    z-index: 12;
     /* Ensure it's above the overlay */
 }
 
@@ -79,13 +82,13 @@
 
 .scroll-arrow {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 8rem;
     left: 50%;
     transform: translateX(-50%);
     font-size: 3rem;
     color: red;
     animation: bounce 1.5s infinite;
-    z-index: 3;
+    z-index: 12;
     user-select: none;
 }
 
@@ -127,18 +130,23 @@
 @media (max-width: 700px) {
     .main-heading {
         font-size: 8rem;
-        height: 100vh;
+        height: 60vh;
         width: 50vw;
-        line-height: 10rem;
+        line-height: 8rem;
     }
 }
 
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .main-heading {
         font-size: 8rem;
-        height: 100vh;
-        width: 80vw;
+        height: 50vh;
+        width: 50vw;
         /* border: 1px solid; */
+    }
+} 
+@media (max-width: 700px) {
+    .main-content {
+        margin-top: 2rem;
+       justify-content: flex-start;
     }
 } 
