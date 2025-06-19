@@ -21,7 +21,7 @@
       text-align: left;  
       justify-content: flex-start; 
       align-items: flex-start;       /* optional: align text nicely */
-      width: 75vw;
+      width: 100vw;
       height: 100vh;
       font-size: 2rem;
       border: 1px solid white;
