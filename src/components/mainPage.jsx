@@ -15,7 +15,7 @@ function MainPage() {
         <h1 className="main-heading">
   <span className="heading-top">THE</span>
   <span className="location">Grains Bar, Oldham OL4 2JX</span><br />
-  <span className="heading-bottom">KINGS ARMS</span>
+  <span className="heading-bottom">KINGS <span className="arms">ARMS</span></span>
 </h1>
 
           <ReviewCarousel />

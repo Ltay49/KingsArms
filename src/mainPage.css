@@ -151,16 +151,6 @@
         font-size: 1.45rem;
     }
 }
-@media (max-width: 500px) {
-    .main-heading {
-        font-size: 7rem;
-        /* bottom: 3.3rem; */
-        flex-direction: column;
-    }
-    .location {
-        font-size: 1.4rem;
-    }
-}
 
 @media (max-width: 700px) {
     .main-heading {
@@ -183,6 +173,14 @@
         padding: 10px 16px;
     }
 }
-
-
-
+@media (max-width: 600px) {
+    .heading-top{
+        margin-left: 2.3rem;
+    }
+    .arms{
+        margin-left: 3.7rem; 
+    }
+    .location {
+        font-size: 0rem;
+    }
+}
