@@ -159,9 +159,6 @@
     }
 }
 @media (max-width: 580px) {
-    .main-content{
-        background: rgba(255, 0, 0, 0.1);
-    }
     .heading-top{
         margin-left: 2.3rem;
     }
@@ -172,11 +169,10 @@
         font-size: 0rem;
     }
 }
-@media (max-width: 490px) {
+@media (min-width: 490px) {
     .main-content{
-        border: 1px solid red;
         margin-top: 1rem;
-        background: rgba(255, 0, 0, 0.1);
+        background: rgba(255, 0, 0, 0.01);
     }
     .heading-top{
         margin-left: 2.3rem;
