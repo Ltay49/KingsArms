@@ -2,7 +2,7 @@
 
 .main-page {
     position: relative;
-    /* height: 100vh; */
+    height: 100%;
     width: 100%;
     /* overflow: auto; Allow scrolling if content exceeds viewport */
   }
