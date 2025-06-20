@@ -171,9 +171,11 @@
     }
 }
 @media (max-width: 580px) and (pointer: coarse) {
+    .main-content{
+        margin-top: 3rem;
+    }
     .heading-top {
       margin-left: 2.3rem;
-      background: rgba(255, 0, 0, 0.1);
     }
     .arms {
       margin-left: 3.7rem;
@@ -181,6 +183,9 @@
     .location {
       font-size: 0rem;
     }
+    .scroll-down-btn {
+       margin-bottom: 5rem;
+      }
   }
   
 /* Small devices and touch screens */
