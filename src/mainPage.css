@@ -171,18 +171,10 @@
     }
 }
 /* Small devices and touch screens */
-@media (max-width: 499px) and (pointer: coarse) {
+@media (max-width: 499px){
     .main-content {
         border: 1px solid red !important;
-        margin-top: 1rem !important;
       background: rgba(255, 0, 0, 0.1);
-      padding: 1rem;
-    }
-    .heading-top {
-      margin-left: 2rem;
-    }
-    .arms {
-      margin-left: 3.5rem;
     }
     .location {
       font-size: 0;
