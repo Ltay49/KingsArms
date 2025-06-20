@@ -151,6 +151,16 @@
         font-size: 1.45rem;
     }
 }
+@media (max-width: 500px) {
+    .main-heading {
+        font-size: 7rem;
+        /* bottom: 3.3rem; */
+        flex-direction: column;
+    }
+    .location {
+        font-size: 1.4rem;
+    }
+}
 
 @media (max-width: 700px) {
     .main-heading {
