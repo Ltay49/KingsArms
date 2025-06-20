@@ -4,8 +4,8 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
-}
+    overflow: auto; /* Allow scrolling if content exceeds viewport */
+  }
 
 .main-page::before {
     content: "";
@@ -39,14 +39,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: 100vh;
     width: 100vw;
-    margin-top: 0rem;
     position: relative;
-    /* Important */
     z-index: 10;
-    /* border: 5px solid green; */
-}
+    padding: 1rem;
+  }
+  
 
 .main-content {
     min-height: 100vh;
@@ -175,6 +173,8 @@
     .main-content{
         border: 1px solid red;
         margin-top: 1rem;
+        background: rgba(255, 0, 0, 0.1);
+
    
     }
     .heading-top{
