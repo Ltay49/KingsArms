@@ -12,15 +12,15 @@
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     
   }
-  @media (min-width: 700px) {
+  /* @media (min-width: 700px) {
     .site-header{
-        background-color: rgba(0, 0, 0, 0.7); /* Subtle dark background on scroll */
+        background-color: rgba(0, 0, 0, 0.7);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     }
     .site-logo{
         opacity: 1;
     }
-  }
+  } */
   
   .site-header.scrolled {
     background-color: rgba(0, 0, 0, 0.7); /* Subtle dark background on scroll */
@@ -108,27 +108,16 @@
     font-size: 1.2rem;
   }
 }
-@media (min-width: 700px) {
-    .site-header{
-        background-color: rgba(0, 0, 0, 0.7); /* Subtle dark background on scroll */
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    }
-    .site-logo{
-        opacity: 1;
-        margin-top: .5rem;
-    }
-    .nav-links{
-        opacity: 1;
-    }
-    .nav-links{
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-    .nav-links a:hover {
-        color: gold;
-      }
-    }
+.full-height-image {
+    height: 100vh;
+    width: 100%;
+    object-fit:scale-down;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
 
     .scroll-down-btn {
         position: absolute;
