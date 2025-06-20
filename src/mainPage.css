@@ -174,8 +174,8 @@
 @media (max-width: 490px) {
     .main-heading{
         border: 1px solid red;
-        margin-top: 10rem;
-        font-size: 10rem;
+        margin-top: 10rem !important;
+        font-size: 10rem !important;
     }
     .heading-top{
         margin-left: 2.3rem;
