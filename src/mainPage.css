@@ -172,7 +172,7 @@
 }
 @media (max-width: 580px) and (pointer: coarse) {
     .main-content{
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
     .heading-top {
       margin-left: 2.3rem;
@@ -184,7 +184,7 @@
       font-size: 0rem;
     }
     .scroll-down-btn {
-       margin-bottom: 5rem;
+       margin-bottom: 10rem;
       }
   }
   
