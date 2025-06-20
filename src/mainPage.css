@@ -128,13 +128,6 @@
     border-top: 10px solid white;
   }
   
-  
-@media (max-width: 480px) {
-    .scroll-down-btn {
-      margin-bottom: 30rem;
-    }
-}
-
 @media (max-width: 768px) {
     .main-heading {
         font-size: 9rem;
@@ -167,7 +160,23 @@
         padding: 10px 16px;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 580px) {
+    .heading-top{
+        margin-left: 2.3rem;
+    }
+    .arms{
+        margin-left: 3.7rem; 
+    }
+    .location {
+        font-size: 0rem;
+    }
+}
+@media (max-width: 490px) {
+    .main-heading{
+        border: 1px solid red;
+        margin-top: 10rem;
+        font-size: 10rem;
+    }
     .heading-top{
         margin-left: 2.3rem;
     }
