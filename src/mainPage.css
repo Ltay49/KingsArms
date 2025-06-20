@@ -42,10 +42,9 @@
     width: 100vw;
     position: relative;
     z-index: 10;
-    padding: 1rem;
-  }
+    padding: 1rem;  
+}
   
-
 .main-content {
     min-height: 100vh;
     height: auto;
@@ -148,17 +147,21 @@
 
     .main-content {
         justify-content: flex-start;
-        padding-top: 5rem;
+        padding-top: 4rem;
         height: auto;
     }
 
     .tripadvisor-link {
+        transform: translateY(-1.8em);
+        margin-left: 0;
         font-size: 1.5rem;
-        /* Larger text */
         padding: 10px 16px;
     }
 }
 @media (max-width: 580px) {
+    .main-content{
+        background: rgba(255, 0, 0, 0.1);
+    }
     .heading-top{
         margin-left: 2.3rem;
     }
@@ -169,12 +172,19 @@
         font-size: 0rem;
     }
 }
-
 @media (max-width: 490px) {
-    .main-content {
-      border: 3px dashed red;
-      background: rgba(255, 0, 0, 0.15);
-      min-height: 200px;
-      z-index: 9999;
+    .main-content{
+        border: 1px solid red;
+        margin-top: 1rem;
+        background: rgba(255, 0, 0, 0.1);
     }
-  }
+    .heading-top{
+        margin-left: 2.3rem;
+    }
+    .arms{
+        margin-left: 3.7rem; 
+    }
+    .location {
+        font-size: 0rem;
+    }
+}
