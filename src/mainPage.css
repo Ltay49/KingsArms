@@ -172,10 +172,10 @@
     }
 }
 @media (max-width: 490px) {
-    .main-heading{
+    .main-content{
         border: 1px solid red;
-        margin-top: 10rem !important;
-        font-size: 10rem !important;
+        margin-top: 1rem;
+   
     }
     .heading-top{
         margin-left: 2.3rem;
