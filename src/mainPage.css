@@ -131,15 +131,9 @@
   
 @media (max-width: 480px) {
     .scroll-down-btn {
-      margin-bottom: 10rem;
+      margin-bottom: 30rem;
     }
 }
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     .main-heading {
