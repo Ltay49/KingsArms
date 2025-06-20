@@ -7,6 +7,12 @@
     overflow: auto; /* Allow scrolling if content exceeds viewport */
   }
 
+  .main-page {
+    overflow-y: auto;       /* Allow vertical scrolling */
+    overflow-x: hidden;     /* Prevent horizontal scrolling */
+    touch-action: pan-y;    /* Hint to browser to handle vertical pan gestures */
+  }
+
 .main-page::before {
     content: "";
     position: absolute;
