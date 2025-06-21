@@ -173,7 +173,8 @@
 }
 @media (max-width: 580px) and (pointer: coarse) {
    .main-heading{
-    margin-top: 5rem;
+    border: 1px solid red;
+    margin-top: 10rem;
 }
     .heading-top {
         border: 1px solid red;
