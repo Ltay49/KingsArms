@@ -172,8 +172,11 @@
     }
 }
 @media (max-width: 580px) and (pointer: coarse) {
-   .main-heading{margin-top: 5rem;}
+   .main-heading{
+    margin-top: 5rem;
+}
     .heading-top {
+        border: 1px solid red;
       margin-left: 2.3rem;
     }
     .arms {
