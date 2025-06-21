@@ -1,23 +1,35 @@
-import React from 'react';
-import '../foodSection.css';
-
-import dish1 from '/guninessPint.png';
-import dish2 from '/IceCream.png';
-import dish3 from '/salmonDish.png';
-import dish4 from '/stickyRibs.png';
+import React, { useState } from "react";
+import "../foodSection.css";
+import PubFront from "/PubFront.png";
 
 function FoodSection() {
-    return (
-      <section className="food-section">
-        <h2 className="food-heading">Our Food</h2>
-        <div className="food-grid">
-          <img src={dish1} alt="Braised Steak" className="food-img img-large-vertical" />
-          <img src={dish2} alt="Sunday Roast" className="food-img img-square" />
-          <img src={dish3} alt="Dessert" className="food-img img-rectangle" />
-          <img src={dish4} alt="Starter" className="food-img img-tall" />
-        </div>
-      </section>
-    );
-  }
-  
-  export default FoodSection;
+  const categories = ["Beverages", "Starters", "Mains", "Desserts"];
+  const [hovered, setHovered] = useState(null);
+
+  return (
+    <section
+      className={`food-section ${hovered ? `bg-${hovered.toLowerCase()}` : ""}`}
+    > 
+      <img
+        src={PubFront}
+        alt="Pub Front"
+        className={`full-image ${hovered ? "hidden-image" : ""}`}
+      />
+
+      <ul className="food-list">
+        {categories.map((category) => (
+          <li
+            key={category}
+            className="food-item"
+            onMouseEnter={() => setHovered(category)}
+            onMouseLeave={() => setHovered(null)}
+          >
+            {category}
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+export default FoodSection;

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .main-page {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    /* overflow: auto; Allow scrolling if content exceeds viewport */
+    padding: 1rem 0em;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    min-height: 100vh;
   }
-
 
 .main-page::before {
     content: "";
@@ -14,10 +14,10 @@
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 1),   /* Top dark */
-      rgba(0, 0, 0, 0.35) 25%,  /* Light middle */
-      rgba(0, 0, 0, 0.35) 60%,  /* Light middle */
-      rgba(0, 0, 0, 1)       /* Bottom dark */
+      rgba(0, 0, 0, .8),   /* Top dark */
+      rgba(53, 52, 30, 0.35) 25%,  /* Light middle */
+      rgba(53, 52, 30, 0.35) 60%,  /* Light middle */
+      rgba(0, 0, 0, .8)       /* Bottom dark */
     );
     z-index: 1;
     pointer-events: none;
@@ -173,11 +173,9 @@
 }
 @media (max-width: 580px) and (pointer: coarse) {
    .main-heading{
-    border: 1px solid red;
     margin-top: 10rem;
 }
     .heading-top {
-        border: 1px solid red;
       margin-left: 2.3rem;
     }
     .arms {
