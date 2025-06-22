@@ -52,7 +52,17 @@
     color: #DAA520; /* subtle gold */
     background-color: rgba(0, 0, 0, 0.05);
   }
+  .sizes-row {
+    display: flex;
+    gap: 16px; /* space between sizes */
+    flex-wrap: wrap; /* if it overflows, wrap to next line */
+  }
   
+  .size-price {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    color: #555;
+  }
   /* Responsive */
   @media (max-width: 900px) {
     .submenu-heading {
@@ -67,7 +77,7 @@
 
   .submenu-heading {
     color: rgb(208, 130, 143);
-    font-size:3rem;
+    font-size:2rem;
     position:absolute;
     bottom: 1rem;
     letter-spacing: 1px;
