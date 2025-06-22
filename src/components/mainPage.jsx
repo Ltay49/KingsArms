@@ -1,5 +1,5 @@
 import React from "react";
-import BarImage from "/BarFront.png";
+import BarImage from "/PubFront.png";
 import "../mainPage.css";
 import "./reviewCarousel";
 import ReviewCarousel from "./reviewCarousel";
