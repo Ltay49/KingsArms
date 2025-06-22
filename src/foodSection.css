@@ -219,7 +219,6 @@
         right: 0;
         bottom: 1rem;
     }
-
     .food-item {
         color: black;
         font-size: 2rem;
@@ -235,6 +234,7 @@
     .food-list {
     bottom: 3rem;
 }
+
 }
 
 .pagination-buttons {
