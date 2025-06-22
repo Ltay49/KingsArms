@@ -4,6 +4,7 @@ import BeverageSubmenu from "./beverageMenu";
 import StartersSubmenu from "./StartersSubmenu";
 import MainCourseSubmenu from "./MainCourseSubmenu";
 import BarImage from "/BarFront.png";
+import DessertsSubmenu from "./DessertsSubmenu";
 
 function FoodSection() {
   const categories = ["Beverages", "Starters", "Mains", "Desserts"];
@@ -35,6 +36,7 @@ function FoodSection() {
           {hovered === "Beverages" && <BeverageSubmenu />}
           {hovered === "Starters" && <StartersSubmenu />}
           {hovered === "Mains" && <MainCourseSubmenu />}
+          {hovered === "Desserts" && <DessertsSubmenu />}
           {/* You can add <DessertSubmenu /> here later */}
         </section>
       </div>
