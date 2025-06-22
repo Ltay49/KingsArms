@@ -86,7 +86,9 @@
 }
 @media (max-width: 650px)and (pointer: coarse){
     .menu-item {
-        font-size: 2rem;
-       
+        font-size: 1.2rem;
+      }
+      .submenu-heading{
+        font-size: 1.5rem;
       }
 }
