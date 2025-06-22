@@ -20,32 +20,33 @@ function BeverageSubmenu() {
 
   return (
     <>
-    <div className="heading-box"></div>
-    <div className="beverage-submenu">
-      <h3 className="submenu-heading">Drinks Menu</h3>
+<div className="submenu-container">
+  <h3 className="submenu-heading">Drinks Menu</h3>
+  <p className="pageCount">1 - 1</p>
 
-      <div className="submenu-section">
-        <h4 className="submenu-subheading">Alcoholic Beverages</h4>
-        <ul className="submenu-list">
-          {alcoholicDrinks.map((drink) => (
-            <li key={drink.name} className="beverage-item">
-              {drink.name} — £{drink.price.toFixed(2)} ({drink.alcoholPercent}% ABV)
-            </li>
-          ))}
-        </ul>
-      </div>
+  <div className="submenu-section">
+    <h4 className="submenu-subheading">Alcoholic Beverages</h4>
+    <ul className="submenu-list">
+      {alcoholicDrinks.map((drink) => (
+        <li key={drink.name} className="menu-item">
+          {drink.name} — £{drink.price.toFixed(2)} ({drink.alcoholPercent}% ABV)
+        </li>
+      ))}
+    </ul>
+  </div>
 
-      <div className="submenu-section">
-        <h4 className="submenu-subheading">Non-Alcoholic Beverages</h4>
-        <ul className="submenu-list">
-          {nonAlcoholicDrinks.map((drink) => (
-            <li key={drink.name} className="beverage-item">
-              {drink.name} — £{drink.price.toFixed(2)} (Non-alcoholic)
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+  <div className="submenu-section">
+    <h4 className="submenu-subheading">Non-Alcoholic Beverages</h4>
+    <ul className="submenu-list">
+      {nonAlcoholicDrinks.map((drink) => (
+        <li key={drink.name} className="menu-item">
+          {drink.name} — £{drink.price.toFixed(2)} (Non-alcoholic)
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
     </>
   );
 }

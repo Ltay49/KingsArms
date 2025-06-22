@@ -14,11 +14,11 @@
     inset: 0;
     background: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, .8),100%,
-      rgba(53, 52, 30, 0.1) 2%,
-      rgba(255, 255, 255, 0.1) 15%,
-      rgba(120, 119, 99, 0.4) 60%, 
-      rgba(0, 0, 0, 0.7) 100%
+      rgba(0, 0, 0, .8),15%,
+      rgba(53, 52, 30, 0.1) 20%,
+      rgba(255, 255, 255, 0.1) 60%,
+      rgba(120, 119, 99, 0.4) 10%, 
+      rgba(0, 0, 0, 0.7) 85%
     );
     z-index: 1;
     pointer-events: none;
