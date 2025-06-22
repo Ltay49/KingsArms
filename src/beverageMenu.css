@@ -66,6 +66,7 @@
     }
 
   .submenu-heading {
+    color: rgb(208, 130, 143);
     font-size:3rem;
     position:absolute;
     bottom: 1rem;

@@ -56,10 +56,10 @@
   @media (max-width: 650px) {
     .submenu-container{
         border: none;
-        height: 100%;
     }
     .starters-submenu {
-      max-width: 90%;
+    height: 90%;
+      max-width: 100%;
       padding: 1rem 1.25rem;
     }
   
@@ -75,7 +75,7 @@
       font-size: 1.2rem;
     }
     .submenu-heading {
-        color: #333;
+        color: rgb(208, 130, 143);
         font-family: 'Bebas Neue', sans-serif;
         font-size:2.5rem;
         position:absolute;

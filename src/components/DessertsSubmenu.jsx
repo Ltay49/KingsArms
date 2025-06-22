@@ -17,8 +17,8 @@ function DessertsSubmenu() {
 
   return (
     <div className="dessert-submenu">
-      <h3 className="submenu-heading">Desserts Menu</h3>
-
+      <h3 className="submenu-headingDes">Desserts Menu</h3>
+      <p className="pageCountDes">1 - 1</p>
       <div className="submenu-section">
         <h4 className="submenu-subheading">Vegetarian</h4>
         <ul className="submenu-list">

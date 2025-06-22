@@ -23,6 +23,7 @@ function MainCourseSubmenu() {
   return (
     <div className="maincourse-submenu">
       <h3 className="submenu-heading">Main Courses</h3>
+      <p className="pageCount">1 - 1</p>
       <div className="submenu-section">
         <h4 className="submenu-subheading">Vegetarian</h4>
         <ul className="submenu-list">

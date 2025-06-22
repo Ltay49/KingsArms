@@ -19,7 +19,7 @@ function StartersSubmenu() {
   return (
     <div className="starters-submenu">
       <h3 className="submenu-heading">Starters Menu</h3>
-
+      <p className="pageCount">1 - 1</p>
       <div className="submenu-section">
         <h4 className="submenu-subheading">Vegetarian</h4>
         <ul className="submenu-list">

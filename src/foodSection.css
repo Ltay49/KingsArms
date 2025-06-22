@@ -217,7 +217,7 @@
         justify-content: center;
         left: 0;
         right: 0;
-        bottom: 0rem;
+        bottom: 1rem;
     }
 
     .food-item {
@@ -229,4 +229,10 @@
         border: none;
         height: 100%;
     }
+}
+
+@media (max-width: 650px)and (pointer: coarse){
+    .food-list {
+    bottom: 3rem;
+}
 }
