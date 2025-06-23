@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../starterMenu.css";
 
 function StartersSubmenu() {
-  const itemsPerPage = 6;
+    const [itemsPerPage, setItemsPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      const isTouchDevice =
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0;
+  
+      const isPhoneOrTablet = window.innerWidth < 650;
+  
+      if (isTouchDevice && isPhoneOrTablet) {
+        setItemsPerPage(15);
+      } else {
+        setItemsPerPage(10);
+      }
+    };
+  
+    updateItemsPerPage(); // run on mount
+    window.addEventListener("resize", updateItemsPerPage); // update on resize
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   const startersMenu = [
     { name: "Garlic Bread", price: 3.5, vegetarian: true, spicy: false, kcal: 200 },

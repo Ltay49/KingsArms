@@ -48,7 +48,9 @@ font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid #ddd;
     transition: all 0.3s ease;
   }
-  
+  /* .dessert-name{
+    font-weight: bold;
+  } */
   .dessert-item:hover {
     color: #ff6600;
     background-color: rgba(0, 0, 0, 0.05);
@@ -67,6 +69,10 @@ font-family: 'Roboto', sans-serif;
     background-color: white;
     padding: 1rem 1.5rem;
   }
+  }
+  .dessert-kcal{
+    font-style: italic;
+    color: #555;
   }
 
   @media (max-width: 650px){
@@ -107,11 +113,11 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 650px) and (pointer: coarse){
 
     .submenu-headingDes {
-        bottom: 10rem;
+        bottom: 6rem;
     }
     .pageCountDes{
         color: #333;
         position:absolute;
-        bottom: 6rem;
+        bottom: 8rem;
       }
 }
