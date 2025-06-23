@@ -167,8 +167,8 @@
         font-size: 0rem;
     }
 }
-/* @media (max-width: 580px) and (pointer: coarse) {
-   .main-heading{
+@media (max-width: 580px) and (pointer: coarse) {
+   /* .main-heading{
     margin-top: 10rem;
 }
     .heading-top {
@@ -179,8 +179,8 @@
     }
     .location {
       font-size: 0rem;
-    }
+    } */
     .scroll-down-btn {
-       margin-bottom: 10rem;
+       margin-bottom: 5rem;
       }
-  } */
+  }
