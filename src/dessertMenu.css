@@ -125,7 +125,7 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 499px)and (pointer: coarse){
 
     .submenu-headingDes {
-        bottom: 7rem;
+        bottom: 4rem;
         font-size: 25px;
     }
 
@@ -151,4 +151,4 @@ font-family: 'Roboto', sans-serif;
       .pageCount{
         font-size: 12px
       }
-}
+    }
