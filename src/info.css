@@ -65,7 +65,7 @@
     }
   
     .info-column h3 {
-      font-size: 8rem;
+      font-size: 120px;
       height: 6rem;
       letter-spacing: 1rem;
     }
@@ -76,17 +76,18 @@
   
     .info-column p {
         text-align: left;
+        font-size: 18px;
     }
   }
   
   @media (max-width: 768px) and (pointer: coarse) {
 
     .info-column h3 {
-        font-size: 8rem;
+        font-size: 100px;
         height: 6rem;
         letter-spacing: 0.3rem;
       }
       .info-column p {
-       font-size: 1.5rem;
+       font-size: 18px;
     }
   }
