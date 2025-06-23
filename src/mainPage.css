@@ -199,7 +199,7 @@
         margin-left: 1rem;
     }
     .tripadvisor-link {
-        transform: translateY(-.8em);
+        transform: translateY(1em);
         margin-left: 0;
         font-size: 1.5rem;
         padding: 10px 16px;
