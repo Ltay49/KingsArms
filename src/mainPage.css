@@ -205,6 +205,6 @@
         padding: 10px 16px;
     }
     .scroll-down-btn {
-        transform: translateY(2em);
+        margin-bottom: 50px;
        }
   }
