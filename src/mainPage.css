@@ -159,6 +159,7 @@
         padding: 10px 16px;
     }
 }
+
 @media (max-width: 580px) {
     .heading-top{
         margin-left: 2.3rem;
@@ -183,9 +184,9 @@
     .location {
       font-size: 0rem;
     } */
-    .scroll-down-btn {
+    /* .scroll-down-btn {
        margin-top: 4rem;
-      }
+      } */
   }
 
   @media (max-width: 480px) {
@@ -202,8 +203,4 @@
         font-size: 1.5rem;
         padding: 10px 16px;
     }
-    .scroll-down-btn {
-        margin-top: 3rem;
-        border: 1px solid red;
-       }
   }
