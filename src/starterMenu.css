@@ -1,6 +1,6 @@
 .starters-submenu {
     background-color: white;
-    padding: 0rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     list-style: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     font-family: 'Bebas Neue', sans-serif;
@@ -70,7 +70,7 @@
         font-family: 'Bebas Neue', sans-serif;
         font-size:1.5rem;
         position:absolute;
-        bottom: 10rem;
+        bottom: 5rem;
         letter-spacing: 1px;
         text-decoration: none;
       }

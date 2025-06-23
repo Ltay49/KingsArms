@@ -34,7 +34,7 @@ function WhoWhatWehere() {
           </p>
           <p>
             Check out our full{" "}
-            <a href="/menu" target="_blank" rel="noopener noreferrer">
+            <a href="#Menu">
               menu
             </a>{" "}
             and don’t miss our specials — they’re often limited-time delights

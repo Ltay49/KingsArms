@@ -46,7 +46,7 @@ function Header() {
       <nav className="nav-links">
         <a href="#location">Location</a>
         <a href="#book">Book</a>
-        <a href="#menu">Menu</a>
+        <a href="#Menu">Menu</a>
         <a href="#about">About Us</a>
       </nav>
     </header>

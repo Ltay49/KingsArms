@@ -8,7 +8,7 @@ import WhoWhatWhere from "./whoWhatWhere";
 
 function MainPage() {
   const nextSectionRef = useRef(null);
-  
+
   React.useEffect(() => {
     function setVh() {
       const vh = window.innerHeight * 0.01;
@@ -24,7 +24,7 @@ function MainPage() {
 
   return (
     <>
-      <div className="main-page">
+      <div className="main-page" id="home">
         <img src={BarImage} alt="Bar Front" className="full-height-image" />
 
         <div className="main-content">
@@ -61,7 +61,7 @@ function MainPage() {
         <WhoWhatWhere />
       </section>
 
-      <section>
+      <section id="Menu">
         <FoodSection />
       </section>
     </>
