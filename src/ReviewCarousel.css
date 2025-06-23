@@ -75,6 +75,11 @@
       text-align: left;  
       justify-content: flex-start; 
       align-items: flex-start;       /* optional: align text nicely */
-      font-size: 1.5rem;
     }
+    .review {
+        font-size: 2rem;
+        line-height: 1.2;
+        width: 99%;
+        margin-right: 1rem;
+      }
   }
