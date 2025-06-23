@@ -167,7 +167,7 @@
         font-size: 0rem;
     }
 }
-@media (max-width: 580px) and (pointer: coarse) {
+/* @media (max-width: 580px) and (pointer: coarse) {
    .main-heading{
     margin-top: 10rem;
 }
@@ -183,4 +183,4 @@
     .scroll-down-btn {
        margin-bottom: 10rem;
       }
-  }
+  } */
