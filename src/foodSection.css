@@ -266,4 +266,13 @@
 }
 }
 
+@media (max-width: 499px)and (pointer: coarse){
+
+    .menu{
+        padding: 1px;
+    }
+
+}
+
+
   
