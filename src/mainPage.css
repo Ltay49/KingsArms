@@ -192,7 +192,7 @@
   @media (max-width: 480px) {
  
     .main-heading {
-        margin-top: 4rem;
+        margin-top: 2rem;
         font-size: 7rem;
         height: auto;
         width: 100vw;
@@ -205,6 +205,6 @@
         padding: 10px 16px;
     }
     .scroll-down-btn {
-        margin-top: 8rem;
+        transform: translateY(2em);
        }
   }
