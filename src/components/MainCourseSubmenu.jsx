@@ -1,9 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../mainCourseMenu.css";
 
 function MainCourseSubmenu() {
-  const itemsPerPage = 7;
+  const [itemsPerPage, setItemsPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
+
+  // ✅ Adjust pagination based on screen/device type
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      const isTouchDevice =
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0;
+
+      const isPhoneOrTablet = window.innerWidth < 650;
+
+      if (isTouchDevice && isPhoneOrTablet) {
+        setItemsPerPage(10);
+      } else {
+        setItemsPerPage(8);
+      }
+    };
+
+    updateItemsPerPage();
+    window.addEventListener("resize", updateItemsPerPage);
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
 
   const mainCourses = [
     { name: "Fish & Chips", price: 10.5, kcal: 950, vegetarian: false, category: "Fish" },
@@ -29,7 +51,7 @@ function MainCourseSubmenu() {
     Fish: "🐟",
     Grill: "🔥",
     Burgers: "🍔",
-    Indian: "🍛",
+    Curry: "🍛",
     Vegetarian: "🥦",
     Pasta: "🍝"
   };
@@ -38,7 +60,7 @@ function MainCourseSubmenu() {
   const startIndex = (currentPage - 1) * itemsPerPage;
   const paginatedItems = mainCourses.slice(startIndex, startIndex + itemsPerPage);
 
-  // Group paginated items by category
+  // ✅ Group paginated items by category
   const groupedByCategory = paginatedItems.reduce((acc, item) => {
     const cat = item.category;
     if (!acc[cat]) acc[cat] = [];
@@ -54,7 +76,7 @@ function MainCourseSubmenu() {
       {Object.entries(groupedByCategory).map(([category, items]) => (
         <div key={category} className="submenu-section">
           <h4 className="submenu-subheading">
-             {category}
+            {categoryIcons[category] || "🍽️"} {category}
           </h4>
           <ul className="submenu-list">
             {items.map(item => (
@@ -83,3 +105,4 @@ function MainCourseSubmenu() {
 }
 
 export default MainCourseSubmenu;
+
