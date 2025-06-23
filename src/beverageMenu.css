@@ -1,6 +1,6 @@
 .submenu-container {
     background-color: white;
-    padding: 24px;
+    padding: 1.5rem;
     list-style: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     font-family: 'Bebas Neue', sans-serif;
@@ -15,16 +15,16 @@
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 6px;
-    font-size: 24px;
-    margin: 0 0 16px;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
     letter-spacing: 1px;
   }
   
   .submenu-subheading {
-    font-size: 28px;
-    margin: 24px 0 16px;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    padding-bottom: 0.3rem;
     font-weight: normal;
   }
   
@@ -38,7 +38,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #222;
-    padding: 8px 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid #ddd;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -49,52 +49,46 @@
   }
   
   .menu-item:hover {
-    color: #DAA520;
+    color: #DAA520; /* subtle gold */
     background-color: rgba(0, 0, 0, 0.05);
   }
-  
   .sizes-row {
     display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+    gap: 16px; /* space between sizes */
+    flex-wrap: wrap; /* if it overflows, wrap to next line */
   }
   
   .size-price {
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 0.9rem;
     color: #555;
   }
-  
   /* Responsive */
   @media (max-width: 900px) {
     .submenu-heading {
-      font-size: 19px;
+      font-size: 1.2rem;
     }
   }
-  
   @media (max-width: 650px) {
-    .submenu-container {
-      border: none;
-      height: 90%;
+    .submenu-container{
+        border: none;
+        height: 90%;
     }
-  
-    .submenu-heading {
-      color: rgb(208, 130, 143);
-      font-size: 32px;
-      position: absolute;
-      bottom: 16px;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
+
+  .submenu-heading {
+    color: rgb(208, 130, 143);
+    font-size:2rem;
+    position:absolute;
+    bottom: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
   }
-  
-  @media (max-width: 650px) and (pointer: coarse) {
+}
+@media (max-width: 650px)and (pointer: coarse){
     .menu-item {
-      font-size: 19px;
-    }
-  
-    .submenu-heading {
-      font-size: 24px;
-    }
-  }
-  
+        font-size: 16px;
+      }
+      .submenu-heading{
+        font-size: 1.5rem;
+      }
+}
