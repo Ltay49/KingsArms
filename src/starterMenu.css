@@ -81,3 +81,15 @@
     
       }
   }
+
+  @media (max-width: 499px)and (pointer: coarse){
+    .starter-item  {
+        font-size: 12px;
+      }
+      .submenu-subheading{
+        font-size: 14px;
+      }
+      .main-kcal {
+        font-size: 12px;
+      }
+}

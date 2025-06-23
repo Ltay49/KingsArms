@@ -285,6 +285,9 @@
         color: black;
         font-size: 20px;
     }
+    .pagination-buttons button {
+        padding: 10px 15px;
+    }
 }
 
 
