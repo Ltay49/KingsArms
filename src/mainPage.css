@@ -199,12 +199,12 @@
         margin-left: 1rem;
     }
     .tripadvisor-link {
-        transform: translateY(1em);
+        transform: translateY(-2em);
         margin-left: 0;
         font-size: 1.5rem;
         padding: 10px 16px;
     }
     .scroll-down-btn {
-        margin-top: 4rem;
+        margin-top: 1rem;
        }
   }
