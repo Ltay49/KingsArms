@@ -271,7 +271,20 @@
     .menu{
         padding: 1px;
     }
-
+    .food-list {
+        position: absolute;
+        z-index: 200;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+    }
+    .food-item {
+        color: black;
+        font-size: 20px;
+    }
 }
 
 
