@@ -78,4 +78,14 @@
   
     }
   }
-  
+  @media (max-width: 499px)and (pointer: coarse){
+    .maincourse-item  {
+        font-size: 12px;
+      }
+      .submenu-subheading{
+        font-size: 14px;
+      }
+      .main-kcal {
+        font-size: 12px;
+      }
+}
