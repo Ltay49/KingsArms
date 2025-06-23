@@ -125,19 +125,22 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 499px)and (pointer: coarse){
 
     .submenu-headingDes {
-        bottom: 8rem;
+        bottom: 2rem;
+        font-size: 20px;
     }
+
     .pageCountDes{
         color: #333;
         position:absolute;
-        bottom: 8rem;
+        bottom: 1rem;
+        font-size: 12px
       }
       
       .dessert-item {
         font-size: 12px;
       }
       .submenu-heading{
-        font-size: 14px;
+        font-size: 20px;
       }
       .dessert-kcal {
         font-size: 12px;
@@ -146,6 +149,6 @@ font-family: 'Roboto', sans-serif;
         bottom: 2rem;
       }
       .pageCount{
-        bottom: 1rem;
+        font-size: 12px
       }
 }
