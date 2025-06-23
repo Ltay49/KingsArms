@@ -125,14 +125,14 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 499px)and (pointer: coarse){
 
     .submenu-headingDes {
-        bottom: 4rem;
+        bottom: 8rem;
         font-size: 25px;
     }
 
     .pageCountDes{
         color: #333;
         position:absolute;
-        bottom: 5rem;
+        bottom: 7rem;
         font-size: 12px
       }
       
