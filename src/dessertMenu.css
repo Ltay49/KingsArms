@@ -103,3 +103,15 @@ font-family: 'Roboto', sans-serif;
     height: 90%;
 }
 }
+
+@media (max-width: 650px) and (pointer: coarse){
+
+    .submenu-headingDes {
+        bottom: 6rem;
+    }
+    .pageCountDes{
+        color: #333;
+        position:absolute;
+        bottom: 6rem;
+      }
+}
