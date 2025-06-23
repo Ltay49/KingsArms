@@ -15,18 +15,7 @@
   }
   
   /* Override for small screens */
-  @media (max-width: 480px) {
-    .review-wrapper {
-      white-space: normal;      
-      text-align: left;  
-      justify-content: flex-start; 
-      align-items: flex-start;       /* optional: align text nicely */
-      width: 100vw;
-      height: 100vh;
-      font-size: 2rem;
-      border: 1px solid white;
-    }
-  }
+
   
   /* Animations */
   .slide-in {
@@ -81,4 +70,12 @@
       width: 99%;
     }
   }
-  
+  @media (max-width: 480px) {
+    .review-wrapper {
+      white-space: normal;      
+      text-align: left;  
+      justify-content: flex-start; 
+      align-items: flex-start;       /* optional: align text nicely */
+      font-size: 2rem;
+    }
+  }
