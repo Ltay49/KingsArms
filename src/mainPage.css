@@ -7,12 +7,16 @@
     width: 100%;
     height: 100svh;
     padding-bottom: 0rem;
+    height: calc(var(--vh, 1vh) * 100);
+    min-height: 100vh;
+    position: relative;
   }
 
 .main-page::before {
     content: "";
     position: absolute;
-    height: 100svh;
+    height: 100vh;
+    min-height: 100vh;
     inset: 0;
     background: linear-gradient(
       to bottom,
@@ -26,17 +30,17 @@
     pointer-events: none;
   }
   
-
   .full-height-image {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
-    height: 100vh !important;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     object-fit: cover !important;
     display: block;
   }
+
   .main-content {
     position: relative;
     z-index: 10;
