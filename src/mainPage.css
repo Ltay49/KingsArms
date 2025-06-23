@@ -217,6 +217,7 @@
         margin-left: 0;
         font-size: 1.5rem;
         padding: 10px 16px;
+        
     }
 }
 @media (max-width: 580px) and (pointer: coarse) {
@@ -233,10 +234,11 @@
       font-size: 0rem;
     } */
     .tripadvisor-link {
-        transform: translateY(-2.2em);
+        transform: translateY(-1.8em);
         margin-left: 0;
         font-size: 1.5rem;
         padding: 10px 16px;
+        margin-bottom: 1rem;
     }
   }
 
