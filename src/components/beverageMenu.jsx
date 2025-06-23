@@ -1,9 +1,31 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect} from "react";
 import "../beverageMenu.css";
 
 function BeverageSubmenu() {
-  const ITEMS_PER_PAGE = 5;
+    const [itemsPerPage, setItemsPerPage] = useState(5);
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    const updateItemsPerPage = () => {
+      const isTouchDevice =
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0;
+  
+      const isPhoneOrTablet = window.innerWidth < 650;
+  
+      if (isTouchDevice && isPhoneOrTablet) {
+        setItemsPerPage(8);
+      } else {
+        setItemsPerPage(5);
+      }
+    };
+  
+    updateItemsPerPage(); // run on mount
+    window.addEventListener("resize", updateItemsPerPage); // update on resize
+    return () => window.removeEventListener("resize", updateItemsPerPage);
+  }, []);
+  
 
   const drinkMenu = [
     // Beer & Cider 🍺
@@ -272,12 +294,11 @@ function BeverageSubmenu() {
   }, [groupedByCategory]);
 
   // Pagination calculation
-  const totalPages = Math.ceil(flattenedDrinks.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(flattenedDrinks.length / itemsPerPage);
 
-  // Drinks for current page
   const currentDrinks = flattenedDrinks.slice(
-    (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
   );
 
   // Group current page drinks again by category for display
