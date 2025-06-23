@@ -17,7 +17,7 @@ function BeverageSubmenu() {
       if (isTouchDevice && isPhoneOrTablet) {
         setItemsPerPage(8);
       } else {
-        setItemsPerPage(5);
+        setItemsPerPage(6);
       }
     };
   

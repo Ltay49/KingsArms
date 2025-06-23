@@ -76,7 +76,7 @@ function MainCourseSubmenu() {
       {Object.entries(groupedByCategory).map(([category, items]) => (
         <div key={category} className="submenu-section">
           <h4 className="submenu-subheading">
-            {categoryIcons[category] || "🍽️"} {category}
+            {category}
           </h4>
           <ul className="submenu-list">
             {items.map(item => (
