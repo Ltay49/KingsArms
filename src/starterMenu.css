@@ -92,4 +92,10 @@
       .main-kcal {
         font-size: 12px;
       }
+      .submenu-heading {
+        bottom: 2rem;
+      }
+      .pageCount{
+        bottom: 1rem;
+      }
 }
