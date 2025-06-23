@@ -70,7 +70,7 @@
       width: 99%;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-width: 490px) {
     .review-wrapper {     
       text-align: left;  
       justify-content: flex-start; 

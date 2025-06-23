@@ -186,11 +186,11 @@
     } */
     .scroll-down-btn {
        margin-top: 4rem;
+       border: 1px solid red;
       }
   }
 
   @media (max-width: 480px) {
- 
     .main-heading {
         margin-top: 2rem;
         font-size: 7rem;
@@ -205,7 +205,7 @@
         padding: 10px 16px;
     }
     .scroll-down-btn {
-        margin-top: 2rem;
+        margin-top: 3rem;
         border: 1px solid red;
        }
   }
