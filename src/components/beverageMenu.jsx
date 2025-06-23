@@ -2,7 +2,7 @@ import React, { useState, useMemo } from "react";
 import "../beverageMenu.css";
 
 function BeverageSubmenu() {
-  const ITEMS_PER_PAGE = 6;
+  const ITEMS_PER_PAGE = 5;
   const [currentPage, setCurrentPage] = useState(1);
 
   const drinkMenu = [

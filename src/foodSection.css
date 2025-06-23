@@ -149,6 +149,27 @@
     position: relative;
 
 }
+.pagination-buttons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .pagination-buttons button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination-buttons button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
 
 @media (max-width: 900px) {
     .menu-wrapper {
@@ -228,35 +249,21 @@
         border: none;
         height: 100%;
     }
+    .pagination-buttons {
+        justify-content: right;
+    }
 }
 
 @media (max-width: 650px)and (pointer: coarse){
     .food-list {
     bottom: 3rem;
 }
-
+.pagination-buttons button {
+    padding: 1.5rem 2rem;
 }
-
 .pagination-buttons {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .pagination-buttons button {
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    border: none;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .pagination-buttons button:disabled {
-    background-color: #888;
-    cursor: not-allowed;
-  }
+    justify-content: right;
+}
+}
 
   
