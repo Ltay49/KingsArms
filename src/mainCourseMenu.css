@@ -33,6 +33,9 @@
     padding: 0;
     margin: 0;
   }
+  .instagram-browser .scroll-down-btn {
+    margin-bottom: 20px; /* Example: move button if overlapping */
+  }
   
   .maincourse-item {
     font-family: 'Roboto', sans-serif;

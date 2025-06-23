@@ -9,6 +9,13 @@ import WhoWhatWhere from "./whoWhatWhere";
 function MainPage() {
   const nextSectionRef = useRef(null);
 
+  useEffect(() => {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    if (ua.includes("Instagram")) {
+      document.body.classList.add("instagram-browser");
+    }
+  }, []);
+
   React.useEffect(() => {
     function setVh() {
       const vh = window.innerHeight * 0.01;
