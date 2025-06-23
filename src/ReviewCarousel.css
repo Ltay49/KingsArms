@@ -71,11 +71,10 @@
     }
   }
   @media (max-width: 480px) {
-    .review-wrapper {
-      white-space: normal;      
+    .review-wrapper {     
       text-align: left;  
       justify-content: flex-start; 
       align-items: flex-start;       /* optional: align text nicely */
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
