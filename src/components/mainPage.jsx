@@ -4,6 +4,7 @@ import "../mainPage.css";
 import "./reviewCarousel";
 import ReviewCarousel from "./reviewCarousel";
 import FoodSection from "./foodSection";
+import WhoWhatWhere from "./whoWhatWhere";
 
 function MainPage() {
   return (
@@ -42,7 +43,9 @@ function MainPage() {
           </div>
         </div>
       </div>
-
+              <section>
+                <WhoWhatWhere />
+              </section>
       <section>
         <FoodSection />
       </section>
