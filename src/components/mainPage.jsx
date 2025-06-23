@@ -25,7 +25,7 @@ function MainPage() {
   return (
     <>
       <div className="main-page" id="home">
-        <img src={BarImage} alt="Bar Front" className="full-height-image" />
+        {/* <img src={BarImage} alt="Bar Front" className="full-height-image" /> */}
 
         <div className="main-content">
           <h1 className="main-heading">
