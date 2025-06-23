@@ -16,7 +16,7 @@ function MainCourseSubmenu() {
       const isPhoneOrTablet = window.innerWidth < 650;
 
       if (isTouchDevice && isPhoneOrTablet) {
-        setItemsPerPage(15);
+        setItemsPerPage(12);
       } else {
         setItemsPerPage(8);
       }

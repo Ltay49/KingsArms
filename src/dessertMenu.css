@@ -107,7 +107,7 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 650px) and (pointer: coarse){
 
     .submenu-headingDes {
-        bottom: 6rem;
+        bottom: 10rem;
     }
     .pageCountDes{
         color: #333;
