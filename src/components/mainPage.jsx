@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import BarImage from "/PubFront.png";
 import "../mainPage.css";
 import "./reviewCarousel";
@@ -7,17 +7,26 @@ import FoodSection from "./foodSection";
 import WhoWhatWhere from "./whoWhatWhere";
 
 function MainPage() {
+  const nextSectionRef = useRef(null);
+
+  const handleScrollDown = () => {
+    nextSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <div className="main-page">
         <img src={BarImage} alt="Bar Front" className="full-height-image" />
 
         <div className="main-content">
-        <h1 className="main-heading">
-  <span className="heading-top">THE</span>
-  <span className="location">Grains Bar, Oldham OL4 2JX</span><br />
-  <span className="heading-bottom">KINGS <span className="arms">ARMS</span></span>
-</h1>
+          <h1 className="main-heading">
+            <span className="heading-top">THE</span>
+            <span className="location">Grains Bar, Oldham OL4 2JX</span>
+            <br />
+            <span className="heading-bottom">
+              KINGS <span className="arms">ARMS</span>
+            </span>
+          </h1>
 
           <ReviewCarousel />
 
@@ -31,21 +40,18 @@ function MainPage() {
               Read Our Reviews
             </a>
 
-            <div
-              className="scroll-down-btn"
-              onClick={() =>
-                window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
-              }
-            >
+            <div className="scroll-down-btn" onClick={handleScrollDown}>
               <span>Scroll</span>
               <div className="chevron"></div>
             </div>
           </div>
         </div>
       </div>
-              <section>
-                <WhoWhatWhere />
-              </section>
+
+      <section ref={nextSectionRef}>
+        <WhoWhatWhere />
+      </section>
+
       <section>
         <FoodSection />
       </section>
