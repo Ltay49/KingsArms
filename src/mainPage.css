@@ -176,9 +176,9 @@
     .location {
         font-size: 1.45rem;
     }
-    .full-height-image{
+    /* .full-height-image{
         display: none;
-    }
+    } */
     .main-page::before {
       
         background: none
