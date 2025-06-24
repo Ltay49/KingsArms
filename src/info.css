@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.iframe{
+    border-radius: 5px;
+}
+.image{
+    border-radius: 5px;}
+
+
 .info-container {
     height: 100vh;
     display: flex;
@@ -12,6 +21,7 @@
   }
   
   .info-column {
+    margin-top: -5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -20,6 +30,74 @@
     background: #ffffffd9;
     /* border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+  }
+  .kingsarms-intro {
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .kingsarms-intro span.highlight {
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(218, 60, 60);
+    letter-spacing: 0.05rem;
+  }
+  
+  .kingsarms-intro span.italic {
+    font-style: italic;
+    font-weight: bold;
+    color: black
+  }
+  
+  .kingsarms-intro span.throne {
+    color: rgb(218, 60, 60);
+    font-weight: bold;
+  }
+  
+  .kingsarms-intro span.crown {
+    color: #DAA520;
+    font-weight: bold;
+  }
+  
+  .menu-highlight {
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-highlight strong {
+    color: #b22222;
+  }
+  
+  .menu-highlight em {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .location-info {
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    padding-bottom: 1.8rem;
+  }
+  
+  .location-info span.highlight  {
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(218, 60, 60);
+    letter-spacing: 0.05rem;
+  }
+  
+  .location-info em {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
   }
   
   .info-column h3 {
@@ -45,15 +123,27 @@
   
   .info-column a {
     color: rgb(218, 60, 60);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: bold;
+  }
+  .info-column a:hover {
+    color: #DAA520;
     font-weight: bold;
   }
   
   .info-column a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   @media (max-width: 768px)  {
+    .iframe{
+        width: 95%;
+    }
+    .image{
+       width: 100%;
+        height: auto;
+       }
     .info-container {
       flex-direction: column;
       align-items: stretch;
@@ -72,6 +162,7 @@
   
     .info-column {
       padding: 0rem;
+      margin-top: -5rem;
       width:100%;
     }
  
@@ -84,7 +175,7 @@
   
   @media (min-width: 768px) {
     .image{
-      display: none;
+     max-height: 200px;
     }
   }
   @media (max-width: 768px) and (pointer: coarse) {
