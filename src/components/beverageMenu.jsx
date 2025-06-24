@@ -320,7 +320,7 @@ function BeverageSubmenu() {
 
       {Object.entries(pageGroupedByCategory).map(([category, drinks]) => (
         <div key={category} className="submenu-section">
-          <h4 className="submenu-subheading">
+          <h4 className="submenuB-subheading">
             {category}
           </h4>
           <ul className="submenu-list">

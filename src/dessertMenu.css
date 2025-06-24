@@ -106,6 +106,13 @@ font-family: 'Roboto', sans-serif;
     border: none;
     height: 90%;
 }
+.submenu-subheading {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    font-weight: normal;
+  }
 }
 
 @media (max-width: 650px) and (pointer: coarse){

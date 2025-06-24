@@ -19,12 +19,12 @@
     color: black;
   }
   
-  .submenu-subheading {
+  /* .submenu-subheading {
     font-size: 1.8rem;
     color: #333;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.3rem;
-  }
+  } */
   
   .submenu-list {
     list-style: none;
@@ -78,9 +78,10 @@
         color: #333;
         /* position:absolute; */
         bottom: 2rem;
-    
       }
+   
   }
+
 
   @media (max-width: 499px)and (pointer: coarse){
     .starter-item  {

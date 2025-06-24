@@ -22,8 +22,9 @@
     letter-spacing: 1px;
   }
   
-  .submenu-subheading {
-    font-size: 1.8rem;
+  .submenuB-subheading {
+    /* color: #DAA520; */
+    font-size: 1.5rem;
     margin: 1.5rem 0 1rem;
     border-bottom: 1px solid #ccc;
     padding-bottom: 0.3rem;
@@ -80,10 +81,16 @@
   .submenu-heading {
     color: rgb(208, 130, 143);
     font-size:2rem;
-    /* position:absolute; */
     bottom: 1rem;
     letter-spacing: 1px;
     text-decoration: none;
+  }
+  .submenuB-subheading {
+    font-size: 20px;
+    margin: 1.5rem 0 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    font-weight: normal;
   }
 }
 @media (max-width: 650px)and (pointer: coarse){
@@ -97,10 +104,10 @@
 
 @media (max-width: 499px)and (pointer: coarse){
     .menu-item {
-        font-size: 12px;
+        font-size: 14px;
       }
       .submenu-heading{
-        font-size: 14px;
+        font-size: 16px;
       }
       .size-price {
         font-size: 12px;
@@ -110,5 +117,10 @@
       }
       .pageCount{
         bottom: 1rem;
+      }
+      .submenuB-subheading {
+        font-size: 43px;
+        margin: 1.5rem 0 1rem;
+        
       }
 }
