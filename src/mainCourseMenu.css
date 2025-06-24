@@ -11,6 +11,9 @@
     width: 100%;
     max-width: 600px;
     margin-bottom: 1rem;
+
+    max-height: 90vh;
+    overflow-y: auto;
   }
   
   .submenu-heading {
@@ -66,14 +69,14 @@
     color: rgb(208, 130, 143);
       font-family: 'Bebas Neue', sans-serif;
       font-size:30px;
-      position:absolute;
+      /* position:absolute; */
       bottom: 3rem;
       letter-spacing: 1px;
       text-decoration: none;
     }
     .pageCount{
       color: #333;
-      position:absolute;
+      /* position:absolute; */
       bottom: 2rem;
   
     }

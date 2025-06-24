@@ -80,7 +80,7 @@
   .submenu-heading {
     color: rgb(208, 130, 143);
     font-size:2rem;
-    position:absolute;
+    /* position:absolute; */
     bottom: 1rem;
     letter-spacing: 1px;
     text-decoration: none;

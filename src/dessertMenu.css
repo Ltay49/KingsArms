@@ -96,13 +96,11 @@ font-family: 'Roboto', sans-serif;
   }
   .pageCount{
     color: #333;
-    position:absolute;
+    /* position:absolute; */
     bottom: 1rem;
   }
   .pageCountDes{
     color: #333;
-    position:absolute;
-    bottom: 6rem;
   }
   .dessert-submenu{
     border: none;
@@ -117,8 +115,6 @@ font-family: 'Roboto', sans-serif;
     }
     .pageCountDes{
         color: #333;
-        position:absolute;
-        bottom: 8rem;
       }
 }
 
@@ -131,8 +127,6 @@ font-family: 'Roboto', sans-serif;
 
     .pageCountDes{
         color: #333;
-        position:absolute;
-        bottom: 5.3rem;
         font-size: 12px
       }
       

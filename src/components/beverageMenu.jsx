@@ -15,9 +15,9 @@ function BeverageSubmenu() {
       const isPhoneOrTablet = window.innerWidth < 650;
   
       if (isTouchDevice && isPhoneOrTablet) {
-        setItemsPerPage(8);
+        setItemsPerPage(10);
       } else {
-        setItemsPerPage(6);
+        setItemsPerPage(10);
       }
     };
   
@@ -342,7 +342,7 @@ function BeverageSubmenu() {
           </ul>
         </div>
       ))}
-
+      <div></div>
       <div className="pagination-buttons">
         <button
           onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}

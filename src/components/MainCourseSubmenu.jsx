@@ -18,7 +18,7 @@ function MainCourseSubmenu() {
       if (isTouchDevice && isPhoneOrTablet) {
         setItemsPerPage(12);
       } else {
-        setItemsPerPage(8);
+        setItemsPerPage(12);
       }
     };
 
