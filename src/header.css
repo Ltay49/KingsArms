@@ -61,6 +61,12 @@
     flex-direction: column;
     align-items: flex-start; /* optional: left-align when stacked */
   }
+  .middle{
+    left: 0rem;
+  }
+  .bottom{
+    right: 1rem
+  }
 }
 
 .site-logo:hover {
