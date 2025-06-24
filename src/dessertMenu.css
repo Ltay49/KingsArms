@@ -80,7 +80,7 @@ font-family: 'Roboto', sans-serif;
     color: rgb(179, 66, 85);
     font-family: 'Bebas Neue', sans-serif;
     font-size:2rem;
-    position:absolute;
+    /* position:absolute; */
     bottom: 2rem;
     letter-spacing: 1px;
     text-decoration: none;
@@ -89,7 +89,7 @@ font-family: 'Roboto', sans-serif;
     color: rgb(179, 66, 85);
     font-family: 'Bebas Neue', sans-serif;
     font-size:2rem;
-    position:absolute;
+    justify-content: baseline;
     bottom: 6rem;
     letter-spacing: 1px;
     text-decoration: none;
