@@ -34,7 +34,7 @@ function WhoWhatWehere() {
           <p className="menu-highlight">
             Our <a className="menuTag" href="#Menu">menu</a> is bursting with bold flavours and freshly prepared dishes
             — from stacked burgers and sizzling grills to crisp, golden fish and
-            vegetarian favourites. Pair it from a selection of real ales, craft
+            vegetarian favourites. Pair it from a hand picked selection of real ales, craft
             beers, and classic spirits.
           </p>
           <img
@@ -55,8 +55,8 @@ function WhoWhatWehere() {
             a gastro pub located at:
             <br />
             <em>Grains Bar, Denshaw, Oldham OL4 2JX</em>.
-          </p>
-          <p>
+            <br />
+            <br />
             <strong>Phone:</strong> <a href="tel:01612647946">0161 264 7946</a>
             <br />
             <strong>Facebook:</strong>{" "}
@@ -73,7 +73,7 @@ function WhoWhatWehere() {
             title="Kings Arms Denshaw Map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11948.416238553602!2d-2.111!3d53.541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb64203c00c4b%3A0x12ecfb9b2bb94f3e!2sOL4%202JX%2C%20Oldham%2C%20UK!5e0!3m2!1sen!2suk!4v1719177590000!5m2!1sen!2suk"
             width="100%"
-            height="200"
+            height="205"
             style={{ border: 0, marginBottom: "1rem", alignSelf: "center" }}
             allowFullScreen=""
             loading="lazy"

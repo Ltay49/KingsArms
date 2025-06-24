@@ -21,17 +21,17 @@
   }
   
   .info-column {
-    margin-top: -5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     padding: 1rem;
     background: #ffffffd9;
     /* border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
   }
   .kingsarms-intro {
+    height: 220px;
     font-family: 'Roboto';
     font-size: 1.2rem;
     line-height: 1.8;
@@ -63,6 +63,7 @@
   }
   
   .menu-highlight {
+    height: 220px;
     font-family: 'Roboto';
     font-size: 1.2rem;
     line-height: 1.8;
@@ -80,14 +81,16 @@
   }
   
   .location-info {
+    line-height: 2rem;
+    height: 220px;
     font-family: 'Roboto';
     font-size: 1.1rem;
-    line-height: 1.8;
     color: #333;
-    padding-bottom: 1.8rem;
+ 
   }
   
   .location-info span.highlight  {
+    line-height: 3rem;
     font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
     color: rgb(218, 60, 60);
@@ -104,10 +107,11 @@
     letter-spacing: 1rem;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 8rem;
+    margin-top: 7rem;
     margin-bottom: 1rem;
     color: rgb(218, 60, 60);
     text-align: center;
-    height: 8rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,6 +143,7 @@
   @media (max-width: 768px)  {
     .iframe{
         width: 95%;
+        margin-top: 1.5rem;
     }
     .image{
        width: 100%;
