@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "../header.css";
 
 function Header() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
   const scrollTimeout = useRef(null);
 
   useEffect(() => {
