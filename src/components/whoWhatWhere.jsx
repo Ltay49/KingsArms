@@ -1,5 +1,6 @@
 import React from "react";
 import "../info.css";
+import BarImage from "/PubFront.png";
 
 function WhoWhatWehere() {
   return (
@@ -12,6 +13,10 @@ function WhoWhatWehere() {
             atmosphere and local charm. Whether you're after a quiet pint or a
             lively evening, you'll feel right at home here.
           </p>
+          <img src={BarImage} alt="Bar Front" className="image" 
+             width="100%"
+             height="280"
+             style={{ border: 0, marginBottom: "0rem", alignSelf:'center' }}/>
           <p>
             <strong>Phone:</strong> <a href="tel:01612647946">0161 264 7946</a>
             <br />
@@ -53,9 +58,9 @@ function WhoWhatWehere() {
           <iframe
             title="Kings Arms Denshaw Map"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11948.416238553602!2d-2.111!3d53.541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb64203c00c4b%3A0x12ecfb9b2bb94f3e!2sOL4%202JX%2C%20Oldham%2C%20UK!5e0!3m2!1sen!2suk!4v1719177590000!5m2!1sen!2suk"
-            width="100%"
+            width="90%"
             height="200"
-            style={{ border: 0, marginTop: "1rem" }}
+            style={{ border: 0, marginBottom: "1rem", alignSelf:'center' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

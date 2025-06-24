@@ -60,7 +60,7 @@
       height: auto;
       text-align: left;
       gap: 0rem;
-      padding: 1rem;
+      /* padding: 1rem; */
       border-bottom: 1px solid;
     }
   
@@ -71,17 +71,26 @@
     }
   
     .info-column {
-      padding: 1rem;
+      padding: 0rem;
+      width:100%;
     }
-  
+ 
     .info-column p {
+        padding: 1.5rem;
         text-align: left;
         font-size: 18px;
     }
   }
   
+  @media (min-width: 768px) {
+    .image{
+      display: none;
+    }
+  }
   @media (max-width: 768px) and (pointer: coarse) {
-
+    .info-container{
+        max-width: 100vw;
+    }
     .info-column h3 {
         font-size: 100px;
         height: 6rem;
